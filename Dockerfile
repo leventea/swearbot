@@ -14,8 +14,7 @@ WORKDIR /bot
 COPY --from=builder /bot/package* .
 RUN npm i --only=prod
 
-COPY .env .env
-COPY docker/entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+COPY docker/entrypoint.sh .env* /bot/
+RUN chmod +x /bot/entrypoint.sh
 
-ENTRYPOINT /entrypoint.sh
+ENTRYPOINT /bot/entrypoint.sh
