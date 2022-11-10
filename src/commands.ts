@@ -8,7 +8,7 @@ export interface Command {
 
 export async function getCommands(): Promise<Array<Command>> {
     const commands = [];
-	const commandFiles = readdirSync('./src/commands').filter((x: string) => x.endsWith('.ts'));
+	const commandFiles = readdirSync('./src/commands');
 
 	for (const file of commandFiles) {
 		const command = (await import(`./commands/${file}`)).default;
