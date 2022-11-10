@@ -10,7 +10,7 @@ client.once(Events.ClientReady, async c => {
         commands.set(cmd.data.name, cmd);
     });
 
-    console.log(`Loaded ${commands.keys.length} command(s).`);
+    console.log(`Loaded ${commands.size} command(s).`);
     console.log(`Bot ready.\nInvite link: https://discord.com/oauth2/authorize/?permissions=-2147481600&scope=bot&client_id=${cfg.clientId}`);
 });
 
