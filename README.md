@@ -11,3 +11,10 @@ The image can be built without a .env file, but you will have to provide both `T
 docker build . -t swearbot
 docker run -e TOKEN=<your bot token> -e CLIENT_ID=<app client id> swearbot
 ```
+
+# Usage
+
+The bot has two commands
+
+- /random: Returns a random word from the list
+- /phrase <number of words>: generates a random phrase based on the list and the given number of words
