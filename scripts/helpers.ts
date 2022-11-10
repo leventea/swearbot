@@ -1,5 +1,4 @@
-import { CommandInteraction, REST } from 'discord.js';
-import { readdirSync } from 'node:fs';
+import { REST } from 'discord.js';
 import { Command, getCommands } from '../src/commands';
 import { cfg } from '../src/config';
 

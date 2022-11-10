@@ -1,6 +1,6 @@
 import { Routes } from "discord.js";
 import { cfg } from "../src/config";
-import { getCommands, getRest } from "./helpers";
+import { getCommandsJson, getRest } from "./helpers";
 
 if (!cfg.devServerId) {
     console.error(`Development server ID is not set.`);
@@ -9,7 +9,7 @@ if (!cfg.devServerId) {
 
 (async () => {
 	try {
-        const commands = await getCommands();
+        const commands = await getCommandsJson();
 		console.log(`Started refreshing ${commands.length} application (/) commands.`);
 
 		const data = await (await getRest()).put(
