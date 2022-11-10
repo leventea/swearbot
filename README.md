@@ -1,7 +1,7 @@
 # Swear Generator Discord Bot
 
 This was funny for like 3 minutes but I wrote it anyways.
-It generates random swear phrases from the provided list of words, the word list contained in this directory was stolen from the leaked eKreta source code (hungarian school journaling system).
+It generates random swear phrases from the provided list of words, the word list contained in this repository was stolen from the leaked eKreta source code (hungarian school journaling system).
 
 # Deployment
 
